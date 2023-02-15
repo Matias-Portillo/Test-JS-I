@@ -4,16 +4,39 @@ function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
   // Tu código:
 }
+const clientes = ["Maria", "Carmen", "Walter"];
+
+function devolverPrimerElemento(array) {
+  
+  return array(clientes[0]);
+}
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
 }
 
+const clientes2 = ["Daiana", "Hernan", "Juan"];
+
+function devolverUltimoElemento(array){
+
+  return array[clientes2.length -1];
+}
+
+
+
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
 }
+
+const clientes3 = ["Sol", "David", "Enzo"];
+
+function obtenerLargoDelArray(array){
+
+  return array[clientes3.length];
+}
+
 
 function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
@@ -21,11 +44,33 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
 }
+const lista = [1, 2, 3, 4, 5];
+
+function incrementarPorUno(array){
+
+  for (let i = 0; i < array.length ; i++){
+
+    return array[lista.length + 1];
+
+  }
+}
+
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+}
+const listaSuper = ["arroz", "pollo", "verduras"];
+
+function agregarItemAlFinalDelArray(array, elemento){
+
+  let elemento = "jugo";
+
+  array.push(elemento);
+
+  return array[listaSuper];
+
 }
 
 function agregarItemAlComienzoDelArray(array, elemento) {
@@ -34,6 +79,16 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // Pista: usa el método `.unshift`
   // Tu código:
 }
+const listaSuper2 = ["Fideos", "Carne", "Manteca"];
+
+function agregarItemAlComienzoDelArray(array, elemento) {
+
+  let elemento = "Gaseosa";
+
+  array.unshift(elemento);
+
+  return array[listaSuper2];
+}
 
 function dePalabrasAFrase(palabras) {
   // "palabras" es un array de strings/cadenas
@@ -41,6 +96,13 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+}
+
+const saludar = ["Hola", "mundo!"];
+
+function dePalabrasAFrase(palabras){
+
+  return saludar ("Hola" + "mundo!");
 }
 
 function arrayContiene(array, elemento) {
