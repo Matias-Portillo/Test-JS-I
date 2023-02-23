@@ -3,39 +3,29 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
   // Tu código:
-}
-const clientes = ["Maria", "Carmen", "Walter"];
-
-function devolverPrimerElemento(array) {
-  
+  const clientes = ["Maria", "Carmen", "Walter"];
   return array(clientes[0]);
 }
+
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-}
-
-const clientes2 = ["Daiana", "Hernan", "Juan"];
-
-function devolverUltimoElemento(array){
+  const clientes2 = ["Daiana", "Hernan", "Juan"];
 
   return array[clientes2.length -1];
-}
 
+}
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-}
-
-const clientes3 = ["Sol", "David", "Enzo"];
-
-function obtenerLargoDelArray(array){
+  const clientes3 = ["Sol", "David", "Enzo"];
 
   return array[clientes3.length];
 }
+
 
 
 function incrementarPorUno(array) {
@@ -43,27 +33,22 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-}
-const lista = [1, 2, 3, 4, 5];
-
-function incrementarPorUno(array){
+  const lista = [1, 2, 3, 4, 5];
 
   for (let i = 0; i < array.length ; i++){
 
     return array[lista.length + 1];
 
-  }
 }
+
+  }
 
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-}
-const listaSuper = ["arroz", "pollo", "verduras"];
-
-function agregarItemAlFinalDelArray(array, elemento){
+  const listaSuper = ["arroz", "pollo", "verduras"];
 
   let elemento = "jugo";
 
@@ -73,15 +58,13 @@ function agregarItemAlFinalDelArray(array, elemento){
 
 }
 
+
 function agregarItemAlComienzoDelArray(array, elemento) {
   // Añade el "elemento" al comienzo del array
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-}
-const listaSuper2 = ["Fideos", "Carne", "Manteca"];
-
-function agregarItemAlComienzoDelArray(array, elemento) {
+  const listaSuper2 = ["Fideos", "Carne", "Manteca"];
 
   let elemento = "Gaseosa";
 
@@ -90,25 +73,25 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   return array[listaSuper2];
 }
 
+
+
 function dePalabrasAFrase(palabras) {
   // "palabras" es un array de strings/cadenas
   // Devuelve un string donde todas las palabras estén concatenadas
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-}
-
-const saludar = ["Hola", "mundo!"];
-
-function dePalabrasAFrase(palabras){
+  const saludar = ["Hola", "mundo!"];
 
   return saludar ("Hola" + "mundo!");
 }
+
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  
 }
 
 function agregarNumeros(numeros) {

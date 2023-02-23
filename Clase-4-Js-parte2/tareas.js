@@ -7,45 +7,104 @@ function crearGato(nombre, edad) {
   // Devuelve el objeto
   // Tu código:
 }
+function crearGato(nombre, edad){
+  const gato = {
+    nombre : nombre,
+    edad : edad,
 
+    meow : function() {
+
+    }
+  }
+  return gato;
+}
+
+let nuevoGato = crearGato("Stacy", 2);
+
+return nuevoGato;
 
 function agregarPropiedad(objeto, property) {
   // Agrega una propiedad al objeto (argumento "objeto") con el valor `null`
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
+    objeto[property] = null;
+
+    return objeto;
 }
+    agregarPropiedad(nuevoGato, "color");
+
 
 function invocarMetodo(objeto, metodo) {
   // "metodo" es una cadena que contiene el nombre de un método (funcion) en el objeto
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
+   const objeto = {
+    x: 0,
+
+    incrementarX: function(){
+      this.x++
+    }
+   }
+
 }
+invocarMetodo(0, "incrementarX")
 
 function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
+    const objetoMisterioso = {
+        numeroMisterioso: 15
+    }
+    return objetoMisterioso*numeroMisterioso
+
 }
+  multiplicarNumeroDesconocidoPorCinco(5)
 
 function eliminarPropiedad(objeto, unaPropiedad) {
   // Elimina la propiedad de objeto cuyo nombre está pasado por el parametro unaPropiedad 
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
+  const objeto = {
+
+    propiedad: "flexible",
+    unaPropiedad: "grande",
+ 
+  }
+  delete objeto.unaPropiedad || objeto.unPropiedad == undefined;
+
+  return objeto;
 }
 
 function nuevoUsuario(nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
+  const nuevoUsuario = {
+    nombre: "Matias",
+    email: "MatiasPortillo@gmail.com",
+    password: "password",
+  }
+  return nuevoUsuario;
 }
 
 function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
+  const usuario = {
+    nombre: "Matias",
+    email: "MatiasPortillo@gmail.com",
+    password: "password",
+  };
+  if (usuario === email){
+    return "true"
+    } else if (usuario =!! email){
+      return "false"
+    }; 
 }
 
 
@@ -55,6 +114,15 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+  const objeto = {
+    propiedad: "propiedad",
+
+  };
+  if (objeto === propiedad) {
+    return "true"
+  } else if (objeto =!! propiedad){
+    return "false"
+  };
 }
 
 function verificarPassword(usuario, password) {
@@ -62,12 +130,32 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
+  const usuario = {
+    nombre: "Matias",
+    email: "MatiasPortillo@gmail.com",
+    password: "password",
+  };
+  if(password === "password") {
+    return "true"
+  } else if(password === "asdasd"){
+    return "false"
+  }
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
+  const usuario = {
+    nombre: "Matias",
+    email: "MatiasPortillo@gmail.com",
+    password: "password",
+  };
+    return usuario;
+  const password = 
+
+  }
+
 }
 
 function agregarAmigo(usuario, nuevoAmigo) {
@@ -75,6 +163,13 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // // Tu código:
+  const usuario = ["Marcos", "Walter", "Hernan"];
+
+  let nuevoAmigo = "Lucas";
+
+  array.push(nuevoAmigo);
+
+  return array[usuario];
 }
 
 function pasarUsuarioAPremium(usuarios) {
