@@ -9,5 +9,5 @@ function imprimir() {
     setTimeout(function() {console.log(3); }, 0);
     console.log (4);
 }
-
+//devuelve undefined
 imprimir();
